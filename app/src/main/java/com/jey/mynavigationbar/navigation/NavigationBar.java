@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import com.jey.mynavigationbar.R;
-import com.jey.mynavigationbar.navigation.MyViewPager;
 
 import java.util.ArrayList;
 import java.util.List;

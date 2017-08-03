@@ -8,6 +8,7 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:isScroll="true"
         android:layout_weight="1">
 
     </com.jey.mynavigationbar.navigation.MyViewPager>
@@ -19,7 +20,8 @@
         android:background="#33000000"
         app:tabGravity="fill"
         app:tabMode="fixed"
-        app:tabIndicatorHeight="0dp">
+        app:tabIndicatorHeight="0dp"
+        >
 
     </android.support.design.widget.TabLayout>
 
