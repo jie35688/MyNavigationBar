@@ -70,6 +70,7 @@ public class NavigationBar extends FrameLayout {
                 for (int i = 0;i < mFragments.size();i++) {
                     if (tab == mTabLayout.getTabAt(i)) {
                         mViewPager.setCurrentItem(i,false);
+                        break;
                     }
                 }
             }
