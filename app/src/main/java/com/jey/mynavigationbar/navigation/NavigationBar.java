@@ -59,25 +59,20 @@ public class NavigationBar extends FrameLayout {
     /**
      * 设置ViewPager的滑动功能
      */
-    public void setViewPagerScrool(boolean isScrool) {
-        mViewPager.setScrool(isScrool);
+    public void setViewPagerScroll(boolean isScrool) {
+        mViewPager.setScroll(isScrool);
     }
 
     private void initEvents() {
         mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                if (tab == mTabLayout.getTabAt(0)) {
-                    mViewPager.setCurrentItem(0,false);
-                }else if (tab == mTabLayout.getTabAt(1)) {
-                    mViewPager.setCurrentItem(1,false);
-                }else if (tab == mTabLayout.getTabAt(2)) {
-                    mViewPager.setCurrentItem(2,false);
-                }else if (tab == mTabLayout.getTabAt(3)) {
-                    mViewPager.setCurrentItem(3,false);
+                for (int i = 0;i < mFragments.size();i++) {
+                    if (tab == mTabLayout.getTabAt(i)) {
+                        mViewPager.setCurrentItem(i,false);
+                    }
                 }
             }
-
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
 

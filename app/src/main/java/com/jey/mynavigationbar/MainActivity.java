@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         navigationBar.addTab(LayoutInflater.from(this).inflate(R.layout.tab_my,null));
         navigationBar.initTab();//添加完后要initTab
 
-        //navigationBar.setViewPagerScrool(false);
+        //navigationBar.setViewPagerScroll(false);
     }
 
     @Override
